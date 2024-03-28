@@ -1,0 +1,469 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color: #BFEA7C;
+    --primary: #9BCF53;
+}
+
+/* Global styles */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.8px;
+    background-color: #393737e7;
+}
+
+.logo1 {
+    width: 250px;
+    padding-left: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+nav ul li:last-child {
+    margin-right: 180px;
+}
+
+nav ul li a:hover {
+    color: #00ff00;
+}
+
+nav ul li a:hover,
+nav ul li.selected a {
+    color: #00ff00;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.welcome-section {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.welcome-section h1 {
+    font-size: 7rem;
+}
+
+.welcome-section h2 {
+    font-size: 7rem;
+    font-weight: bold;
+    background-image: linear-gradient(90deg, yellow, lightgreen, green);
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button ion-icon {
+    margin-left: 5px;
+}
+
+.button:hover {
+    background-color: grey;
+}
+
+.services-section {
+    background-color: white;
+    padding: 100px 0;
+}
+
+.services-section div h1 {
+    color: black;
+    font-size: 2.4rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.services-section div p {
+    color: black;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    width: 290px;
+    height: 420px;
+    border: 3px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 3px solid black;
+}
+
+.three {
+    padding: 10px;
+    border-top: 3px solid black;
+    height: 60px;
+    box-sizing: border-box;
+    padding-left: 150px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.body {
+    padding: 20px;
+    text-align: center;
+    color: black;
+    align-items: center;
+}
+
+.services-section .join {
+    color: black;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.explore-btn {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px;
+}
+
+.explore-btn:hover {
+    background-color: #4ba623;
+}
+
+.b1 {
+    background-color: #CDFADB;
+}
+
+.b2 {
+    background-color: #EED3D9;
+}
+
+.b3 {
+    background-color: #E1AFD1;
+}
+
+.b4 {
+    background-color: #B7C9F2;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 80px;
+    height: 30vh;
+}
+
+footer img {
+    width: 200px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.line-container {
+    width: 100%;
+    text-align: center;
+}
+
+.line {
+    display: inline-block;
+    width: 70%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+@media only screen and (max-width: 768px) {
+    .logo1 {
+        width: 200px;
+        padding-left: 20px;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    nav ul li:last-child {
+        margin-right: 0;
+    }
+
+    .welcome-section h1,
+    .welcome-section h2 {
+        font-size: 4rem;
+    }
+
+    .welcome-section p {
+        font-size: 1rem;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+
+    .options {
+        padding: 20px;
+    }
+
+    .card {
+        width: calc(50% - 40px);
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo1 {
+        width: 150px;
+        padding-left: 10px;
+    }
+
+    .welcome-section h1,
+    .welcome-section h2 {
+        font-size: 3rem;
+    }
+
+    .welcome-section p {
+        font-size: 0.8rem;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .options {
+        padding: 10px;
+    }
+
+    .card {
+        width: calc(100% - 40px);
+        margin-bottom: 50px;
+    }
+}
+
+.offer {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.t3 {
+    height: 200px;
+}
+
+.t4 {
+    height: 200px;
+}
+
+/* .arrow {
+    color: black;
+    background-color: green;
+    border-radius: 50px;
+    border: 3px solid black;
+    cursor: pointer;
+
+} */
+
+.button {
+    padding: 6px 10px 10px 6px;
+    /* background-color: #7eff9b; Button background color */
+    color: #000;
+    /* Button text color */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 120px;
+    height: 45px;
+
+}
+
+.button:hover {
+    background-color: black;
+    /* Button background color on hover */
+    color: #fff;
+    /* Button text color on hover */
+}
+
+.arrow {
+    position: absolute;
+    padding-left: 90px;
+    top: 50%;
+    right: 10px;
+    /* Adjust as needed */
+    transform: translateY(-50%);
+    font-size: 18px;
+    transition: transform 0.3s;
+    color: black;
+}
+
+/* .button:hover .arrow {
+    transform: translate(5px, -50%);
+    /* Move arrow on hover */
+/* }  */
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    /* padding-left: 5px; */
+    padding: 16px;
+    /* padding-bottom: 10px; */
+    width: 35px;
+    height: 10px;
+    /* padding: 20px 20px 10px 10px; */
+    /* background-image: linear-gradient(rgb(74, 217, 74) rgb(89, 202, 89)); */
+    background-color: greenyellow
+}
+
+.buttonn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+    background-color: #fff;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.buttonn:hover {
+    background-color: grey;
+    color: #fff;
+}
+
+.circlee {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arroww {
+    font-size: 20px;
+    color: #fff;
+}
+
+.threee {
+    padding-left: 500px;
+}
